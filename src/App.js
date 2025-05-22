@@ -10,7 +10,7 @@ function App() {
     const fetchPendingReplies = async () => {
       try {
         const response = await axios.get(
-          `${process.env.REACT_APP_API_BASE}/api/pending-replies`
+          `${process.env.REACT_APP_API_BASE}/gmb/pending-replies`
         );
         setReviews(response.data);
       } catch (error) {
